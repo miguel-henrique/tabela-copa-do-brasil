@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela Copa do Brasil</title>
+
+<style>
+
+.breadcrumb{
+  justify-content: space-around;
+  background-image: linear-gradient(to right, rgb(0, 250, 178), rgb(5, 145, 245));
+}
+.breadcrumb-item.active {
+    color: #333333;
+}
+
+
+  
+</style>
+
+</head>
+<body>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page" >Tabela Copa do Brasil</li>
+    </ol>
+  </nav>
+  <div class="container">
+    <div class="Time list-Time">
+      <h5 class="Time-header">Classificação</h5>
+      <div class="Time-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Time</th>
+                <th scope="col">Pontos</th>
+                <th scope="col">Jogos</th>
+                <th scope="col">Vitórias</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let Time of Times">
+                <th scope="col">{{Time.posicao}}</th>
+                <td ><img src={{Time.time.escudo}} width="20px"> {{Time.time.nome_popular}}</td>
+                <td>{{Time.pontos}}</td>
+                <td>{{Time.jogos}}</td>
+                <td>{{Time.vitorias}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  
+  
+  </div>
+
+
+
+</body>
+</html>
