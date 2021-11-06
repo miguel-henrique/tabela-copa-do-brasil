@@ -1,6 +1,5 @@
-# AngularHttp
+# Tabela Copa do Brasil
 
-More details: [Consumindo API REST com HttpClient no Angular 8](https://medium.com/@fernandoevangelista_28291/consumindo-api-rest-com-httpclient-no-angular-8-62c5d733ffb6)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
@@ -27,3 +26,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+<img src="https://github.com/miguel-henrique/tabela-copa-do-brasil/blob/master/img/imagem.JPG">
