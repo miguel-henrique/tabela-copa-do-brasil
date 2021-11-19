@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { TokenInterceptorService } from './token-interceptor.service';
-import { TimeService } from './services/time.service';
 
 @NgModule({
   declarations: [

@@ -1,4 +1,3 @@
-import { TokenInterceptorService } from '../token-interceptor.service';
 import { Injectable, OnInit, Component } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
