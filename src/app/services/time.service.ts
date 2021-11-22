@@ -42,26 +42,3 @@ export class TimeService {
   };
 
 }
-
-
-//METODO 2
-
-export class AppComponent implements OnInit{
-
-  Time = {} as Time;
-  Times: Time[];
-
-  constructor(private http: HttpClient){
-
-  }
-
-  ngOnInit(): void {
-
-    this.http.get('https://api.api-futebol.com.br/v1/campeonatos/2/tabela')
-    .subscribe(data =>{ 
-      let Time = data
-      console.log (Time)
-     });
-
-  }
-}
