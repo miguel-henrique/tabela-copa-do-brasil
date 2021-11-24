@@ -69,10 +69,8 @@ el.style.cssText =
                 <td>{{Time.pontos}}</td>
                 <td>{{Time.jogos}}</td>
                 <td>{{Time.vitorias}}</td>
-                <td class="ultimas" *ngIf="Times.ultimos_jogos['v']">v
-                <!--   <ng-template #empate>
-                    Please friend, login.
-                  </ng-template> -->
+
+                <td *ngIf="ultimosJogos[v]">v
                 </td>
             </tbody>
           </table>

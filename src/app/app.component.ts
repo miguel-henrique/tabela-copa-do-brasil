@@ -24,6 +24,20 @@ export class AppComponent implements OnInit {
     this.TimeService.getTimes().subscribe((Times: Time[]) => {
       this.Times = Times;
     })
-  };
 
+//Captando elemento do array de ultimas partidas para modificar o estilo no html
+    let ultimosJogos = this.Time.ultimos_jogos
+    for (let i = 0; i < ultimosJogos.length; i++) {
+      if (ultimosJogos[i] === "v") 
+{
+    return('y');
+} 
+else
+{
+    return('p'); 
+}  
+    }
+
+  };
+ 
 }
