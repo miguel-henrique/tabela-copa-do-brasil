@@ -12,8 +12,9 @@ export class AppComponent implements OnInit {
 
   Time = {} as Time;
   Times: Time[];
+  
 
-  constructor(private TimeService: TimeService) {}
+  constructor(private TimeService: TimeService) {}s
   
   ngOnInit() {
     this.getTimes();
@@ -26,19 +27,24 @@ export class AppComponent implements OnInit {
     })
 
 //Captando elemento do array de ultimas partidas para modificar o estilo no html
-    let ultimosJogos = this.Time.ultimos_jogos
-    function ultimas([]){ 
-      for (let i = 0; i < ultimas.length; i++) {
-      if (ultimas[i] === "v") 
+let ultimosJogos = this.Time.ultimos_jogos;
+function ultimas([]){ 
+  for (let i = 0; i < ultimas.length; i++) {
+  if (ultimas[i] = "v") 
 {
-    alert('y');
+console.log('vitória');
 } 
-else
+if (ultimas[i] = "e") 
 {
-    alert('p'); 
+console.log('empate');
+}
+
+if (ultimas[i] = "d")
+{
+console.log('derrota'); 
 }  
-    }
-  
+}
+
 }
 
 ultimas(ultimosJogos);
