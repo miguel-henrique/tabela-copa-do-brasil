@@ -44,17 +44,3 @@ else
 ultimas(ultimosJogos);
 }
 }
-
-/* 
-    let ultimosJogos = this.Time.ultimos_jogos
-    let test = (ultima): ultima => {
-      if (ultima.i === "v") 
-      {
-          console.log('y');
-      }
-    }
-
-  test(ultimosJogos);
-
-  };
-  */
