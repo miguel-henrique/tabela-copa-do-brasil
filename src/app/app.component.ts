@@ -27,9 +27,9 @@ export class AppComponent implements OnInit {
 
 //Captando elemento do array de ultimas partidas para modificar o estilo no html
     let ultimosJogos = this.Time.ultimos_jogos
-    function ultimas(){ 
-      for (let i = 0; i < ultimosJogos.length; i++) {
-      if (ultimosJogos[i] === "v") 
+    function ultimas([]){ 
+      for (let i = 0; i < ultimas.length; i++) {
+      if (ultimas[i] === "v") 
 {
     alert('y');
 } 
@@ -41,7 +41,7 @@ else
   
 }
 
-console.log (ultimas(ultimosJogos));
+ultimas(ultimosJogos);
 }
 }
 
