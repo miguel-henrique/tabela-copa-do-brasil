@@ -69,9 +69,11 @@ el.style.cssText =
                 <td>{{Time.pontos}}</td>
                 <td>{{Time.jogos}}</td>
                 <td>{{Time.vitorias}}</td>
-               <!--  <td *ngFor="let ultima of ultimas">{{ultimas}}</td> -->
-                </tr>
-                <td *ngFor="let ultima of ultimas">{{ultimas}}</td>
+                <td>{{time}} <script>
+                  time = Time.vitorias
+
+                </script></td>
+              </tr>
             </tbody>
           </table>
       </div>

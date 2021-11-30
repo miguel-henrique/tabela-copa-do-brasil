@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   Times: Time[];
   
 
-  constructor(private TimeService: TimeService) {}s
+  constructor(private TimeService: TimeService) {}
   
   ngOnInit() {
     this.getTimes();
