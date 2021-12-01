@@ -24,29 +24,35 @@ export class AppComponent implements OnInit {
   getTimes() {
     this.TimeService.getTimes().subscribe((Times: Time[]) => {
       this.Times = Times;
-    })
 
-//Captando elemento do array de ultimas partidas para modificar o estilo no html
-let ultimosJogos = this.Time.ultimos_jogos;
+
+
+      //Função que itera sobre Time.ultimos_jogos
+      
+    let ultimosJogos = this.Time.ultimos_jogos;
 function ultimas([]){ 
   for (let i = 0; i < ultimas.length; i++) {
   if (ultimas[i] = "v") 
-{
+  {
 console.log('vitória');
-} 
+       } 
 if (ultimas[i] = "e") 
-{
+  {
 console.log('empate');
-}
+       }
 
 if (ultimas[i] = "d")
-{
+  {
 console.log('derrota'); 
-}  
-}
+       }  
+   }
 
 }
 
 ultimas(ultimosJogos);
+    })
+
 }
 }
+
+
