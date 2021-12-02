@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
 
   constructor(private TimeService: TimeService) {}
   
+  
   ngOnInit() {
     this.getTimes();
   }
@@ -25,34 +26,36 @@ export class AppComponent implements OnInit {
     this.TimeService.getTimes().subscribe((Times: Time[]) => {
       this.Times = Times;
 
-
-
-      //Função que itera sobre Time.ultimos_jogos
-      
-    let ultimosJogos = this.Time.ultimos_jogos;
-function ultimas([]){ 
-  for (let i = 0; i < ultimas.length; i++) {
-  if (ultimas[i] = "v") 
-  {
-console.log('vitória');
-       } 
-if (ultimas[i] = "e") 
-  {
-console.log('empate');
-       }
-
-if (ultimas[i] = "d")
-  {
-console.log('derrota'); 
-       }  
-   }
-
-}
-
-ultimas(ultimosJogos);
     })
 
 }
+/* 
+// Chama o serviço que obtém todos os Times
+getultimas() {
+  let ultimosJogos = this.Time.ultimos_jogos;
+  this.TimeService.getTimes().subscribe((Times: Time[]) => {
+    this.Times = Times;
+    function ultimas([]){ 
+      for (let i = 0; i < ultimas.length; i++) {
+      if (ultimas[i] = "v") 
+      {
+    console.log('vitória');
+           } 
+    if (ultimas[i] = "e") 
+      {
+    console.log('empate');
+           }
+    
+    if (ultimas[i] = "d")
+      {
+    console.log('derrota'); 
+           }  
+       }
+    
+    }
+    
+    ultimas(ultimosJogos);
+
+  }) */
+
 }
-
-

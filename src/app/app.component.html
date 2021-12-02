@@ -11,6 +11,7 @@
 .breadcrumb{
   justify-content: space-around;
   background-image: linear-gradient(to right, rgb(0, 250, 178), rgb(5, 145, 245));
+  font-size: 30px;
 }
 .breadcrumb-item.active {
     color: #333333;
@@ -63,13 +64,13 @@ el.style.cssText =
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let Time of Times">
+             <tr *ngFor="let Time of Times">
                 <th scope="col">{{Time.posicao}}</th>
                 <td ><img src={{Time.time.escudo}} width="20px"> {{Time.time.nome_popular}}</td>
                 <td>{{Time.pontos}}</td>
                 <td>{{Time.jogos}}</td>
                 <td>{{Time.vitorias}}</td>
-                <td>Ultimas partidas aqui</td>
+                <td>{{Time.ultimos_jogos}}</td>
               </tr>
             </tbody>
           </table>

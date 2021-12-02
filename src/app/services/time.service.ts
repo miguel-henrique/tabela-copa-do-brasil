@@ -25,7 +25,9 @@ export class TimeService {
       .pipe(
         retry(2),
         catchError(this.handleError))
+        
   }
+
 
   // Manipulação de erros
   handleError(error: HttpErrorResponse) {
@@ -40,5 +42,6 @@ export class TimeService {
     console.log(errorMessage);
     return throwError(errorMessage);
   };
-
 }
+
+
