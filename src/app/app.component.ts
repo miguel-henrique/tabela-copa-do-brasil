@@ -53,8 +53,7 @@ getultimas() {
        }
     
     }
-    
-    ultimas(ultimosJogos);
+
 
   }) */
 
