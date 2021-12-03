@@ -29,24 +29,24 @@ export class AppComponent implements OnInit {
     })
 
 }
-/* 
-// Chama o serviço que obtém todos os Times
-getultimas() {
-  let ultimosJogos = this.Time.ultimos_jogos;
-  this.TimeService.getTimes().subscribe((Times: Time[]) => {
-    this.Times = Times;
-    function ultimas([]){ 
-      for (let i = 0; i < ultimas.length; i++) {
-      if (ultimas[i] = "v") 
+
+/* // Chama o serviço que obtém todos os Times
+getUltimas() {
+
+  this.TimeService.getUltimas() {
+    this.Times = Times.ultimos_jogos;
+
+      for (let i = 0; i < Times.length; i++) {
+      if (Times.ultimos_jogos[i] = "v") 
       {
     console.log('vitória');
            } 
-    if (ultimas[i] = "e") 
+    if (Time.ultimos_jogos[i] = "e") 
       {
     console.log('empate');
            }
     
-    if (ultimas[i] = "d")
+    if (Time.ultimos_jogos[i] = "d")
       {
     console.log('derrota'); 
            }  
