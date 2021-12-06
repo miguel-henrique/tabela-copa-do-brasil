@@ -28,19 +28,6 @@
   
 </style>
 
-<script>
-  let el = document.getElementById('ultimas');
-
-// alterando uma propriedade
-el.style.color = 'red';
-
-// varias propriedades
-el.style.cssText =
-    'color: blue;' +
-    'background-color: yellow;' +
-    'border: 1px solid magenta';
-</script>
-
 </head>
 <body>
   <nav aria-label="breadcrumb">
@@ -69,8 +56,8 @@ el.style.cssText =
                 <td ><img src={{Time.time.escudo}} width="20px"> {{Time.time.nome_popular}}</td>
                 <td>{{Time.pontos}}</td>
                 <td>{{Time.jogos}}</td>
-                <td>{{Time.vitorias}}</td>
-                <td>{{Time.ultimos_jogos}}</td>
+                <td>{{Time.vitorias}}</td>       
+                <td id="ultimosJogos">{{Time.ultimos_jogos}}</td>    
               </tr>
             </tbody>
           </table>
