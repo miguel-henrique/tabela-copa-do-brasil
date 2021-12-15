@@ -42,7 +42,6 @@
         <table class="table">
             <thead>
               <tr>
-                <th scope="col"></th>
                 <th scope="col">Time</th>
                 <th scope="col">Pontos</th>
                 <th scope="col">Jogos</th>
@@ -52,13 +51,15 @@
             </thead>
             <tbody>
              <tr *ngFor="let Time of Times">
-                <th scope="col">{{Time.posicao}}</th>
-                <td ><img src={{Time.time.escudo}} width="20px"> {{Time.time.nome_popular}}</td>
+                <td>{{Time.posicao}} <img src={{Time.time.escudo}} width="20px"> {{Time.time.nome_popular}}</td>
                 <td>{{Time.pontos}}</td>
                 <td>{{Time.jogos}}</td>
                 <td>{{Time.vitorias}}</td>       
                 <td>
-                  {{tabela.ultimos_jogos[1] === "v" ? <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/50/ffffff/external-check-banking-and-finance-kiranshastry-lineal-color-kiranshastry.png" width={20} alt="img"/> : <img src="https://img.icons8.com/ios-glyphs/30/ffffff/xbox-x.png" width={20} alt="img"/>}}
+                  {{Time.ultimos_jogos[0] === "v" ? "vitoria" : "" || 
+                    Time.ultimos_jogos[0] === "e" ? "empate" : "" ||
+                    Time.ultimos_jogos[0] === "d" ? "derrota" : "" }}
+                    
               </td>    
               </tr>
             </tbody>
