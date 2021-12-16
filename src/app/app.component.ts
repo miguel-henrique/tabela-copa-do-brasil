@@ -30,31 +30,5 @@ export class AppComponent implements OnInit {
 
 }
 
-/* // Chama o serviço que obtém todos os Times
-getUltimas() {
-
-  this.TimeService.getUltimas() {
-    this.Times = Times.ultimos_jogos;
-
-      for (let i = 0; i < Times.length; i++) {
-      if (Times.ultimos_jogos[i] = "v") 
-      {
-    console.log('vitória');
-           } 
-    if (Time.ultimos_jogos[i] = "e") 
-      {
-    console.log('empate');
-           }
-    
-    if (Time.ultimos_jogos[i] = "d")
-      {
-    console.log('derrota'); 
-           }  
-       }
-    
-    }
-
-
-  }) */
 
 }

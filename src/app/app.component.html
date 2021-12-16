@@ -56,70 +56,20 @@
                 <td>{{Time.jogos}}</td>
                 <td>{{Time.vitorias}}</td>       
               
-              
-              <div>
-                
-              <td *ngIf="Time.ultimos_jogos[0] === 'v' ">
+             
+                 <td *ngIf="Time.ultimos_jogos[0] === 'v' ">
                   <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
-                </td>
-                
+                 </td>
                 <td *ngIf="Time.ultimos_jogos[0] === 'e' ">
                   <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
                 </td>
-                
                 <td *ngIf="Time.ultimos_jogos[0] === 'd' ">
                   <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
                 </td>
-
-
-
-
-                <td *ngIf="Time.ultimos_jogos[1] === 'v' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
-                </td>
                 
-                <td *ngIf="Time.ultimos_jogos[1] === 'e' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
-                </td>
                 
-                <td *ngIf="Time.ultimos_jogos[1] === 'd' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
-                </td>
-
-
-
-
-
-                <td *ngIf="Time.ultimos_jogos[2] === 'v' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
-                </td>
                 
-                <td *ngIf="Time.ultimos_jogos[2] === 'e' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
-                </td>
-                
-                <td *ngIf="Time.ultimos_jogos[2] === 'd' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
-                </td>
-
-
-
-
-                <td *ngIf="Time.ultimos_jogos[3] === 'v' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
-                </td>
-                
-                <td *ngIf="Time.ultimos_jogos[3] === 'e' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
-                </td>
-                
-                <td *ngIf="Time.ultimos_jogos[3] === 'd' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
-                </td>
-
-
-
-              </div>
+             
               </tr>
             </tbody>
           </table>
