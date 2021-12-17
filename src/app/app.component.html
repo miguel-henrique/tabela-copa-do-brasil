@@ -55,21 +55,70 @@
                 <td>{{Time.pontos}}</td>
                 <td>{{Time.jogos}}</td>
                 <td>{{Time.vitorias}}</td>       
-              
-             
-                 <td *ngIf="Time.ultimos_jogos[0] === 'v' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
-                 </td>
-                <td *ngIf="Time.ultimos_jogos[0] === 'e' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+
+                <td>
+                  <!-- Primeiro Indice do Array -->
+                  <ng-container *ngIf="Time.ultimos_jogos[0] === 'v' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[0] === 'e' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[0] === 'd' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
+                  </ng-container>
+                  <!-- Segundo Indice do Array -->
+                  <ng-container *ngIf="Time.ultimos_jogos[1] === 'v'">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[1] === 'e' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[1] === 'd' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
+                  </ng-container>
+                  <!-- Terceiro Indice do Array -->
+                  <ng-container *ngIf="Time.ultimos_jogos[2] === 'v' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[2] === 'e' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[2] === 'd' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
+                  </ng-container>
+                  <!-- Quarto Indice do Array -->
+                  <ng-container *ngIf="Time.ultimos_jogos[3] === 'v' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[3] === 'e' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[3] === 'd' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
+                  </ng-container>
+                  <!-- Quinto Indice do Array -->
+                  <ng-container *ngIf="Time.ultimos_jogos[4] === 'v' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[4] === 'e' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[4] === 'd' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
+                  </ng-container>
+                  <!-- Sexto Indice do Array -->
+                  <ng-container *ngIf="Time.ultimos_jogos[5] === 'v' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/vitoria.svg" alt="vitoria">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[5] === 'e' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/empate.svg" alt="empate">
+                  </ng-container>
+                  <ng-container *ngIf="Time.ultimos_jogos[5] === 'd' ">
+                    <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
+                  </ng-container>
                 </td>
-                <td *ngIf="Time.ultimos_jogos[0] === 'd' ">
-                  <img src="https://tabela-campeonato-brasileiro.vercel.app/img/derrota.svg" alt="derrota">
-                </td>
-                
-                
-                
-             
+          
               </tr>
             </tbody>
           </table>
